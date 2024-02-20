@@ -1,0 +1,13 @@
+services:
+  rentsoft_api_gateway_connector.api_gateway_http_client:
+    class: Rentsoft\ApiGatewayConnectorBundle\Extension\ApiGatewayHttpClient
+    arguments:
+      $parameterBag: "@parameter_bag"
+      $clientRegistry: "@knpu.oauth2.registry"
+      $request: "@request_stack"
+  rentsoft_api_gateway_connector.api_gateway_keycloak_http_client:
+    class: Rentsoft\ApiGatewayConnectorBundle\Extension\ApiGatewayKeycloakHttpClient
+    arguments:
+      $parameterBag: "@parameter_bag"
+      $clientRegistry: "@knpu.oauth2.registry"
+      $request: "@request_stack"

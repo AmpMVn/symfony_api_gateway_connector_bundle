@@ -1,0 +1,38 @@
+{
+    "name": "rentsoft/api-gateway-connector-bundle",
+    "version": "6.1.55",
+    "description": "Api gateway connector service",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=8.0",
+        "doctrine/collections": "^1.5",
+        "knpuniversity/oauth2-client-bundle": "^2.10",
+        "stevenmaguire/oauth2-keycloak": "^3.1",
+        "symfony/framework-bundle": "6.0.*",
+        "symfony/http-client": "6.0.*",
+        "symfony/http-foundation": "6.0.*",
+        "symfony/serializer": "6.0.*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Rentsoft\\ApiGatewayConnectorBundle\\": "src/"
+        }
+    },
+    "license": "Private Software Rentsoft GmbH",
+    "authors": [
+        {
+            "name": "Michal Vanek",
+            "email": "michal.vanek@rentsoft.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "6.0.*"
+        }
+    }
+}
